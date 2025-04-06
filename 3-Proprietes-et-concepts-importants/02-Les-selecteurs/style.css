@@ -1,36 +1,95 @@
 /* Sélecteur universel et simple reset */
 
+/* "*" a une spécifité de 0  */
 
-/* * a une spécifité de 0  */
-
-
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* Par type : p, h1, form */
 
-
+h1 {
+  font-size: 35px;
+  color: salmon;
+}
 
 /* Par classe / id */
 
+.title {
+  color: lightgreen;
+}
 
-
+#title {
+  color: dodgerblue;
+}
 
 /* Combinaison */
 
+.title#title {
+  color: crimson;
+}
 
+.title.main-title {
+  color: blue;
+}
 
-/* Sélecteurs avancés +~> */
+/* Sélecteurs avancés + ~ > */
 
+/* h1 + ul {
+  background-color: blue;
+}
 
+ul > li {
+  background-color: violet;
+}
 
+li ~ li {
+  background-color: yellowgreen;
+} */
+
+input[type="text"] {
+  background: red;
+}
+
+[type] {
+  background: green;
+}
+
+a[href$=".fr"] {
+  background-color: blue;
+}
 
 /* Les pseudo-classes de position */
 
+/* li:nth-child(6) {
+  background: red;
+}
 
+li:nth-of-type(3) {
+  background: yellow;
+}
+
+li:first-of-type {
+  background: green;
+}
+
+li:last-of-type {
+  background: dodgerblue;
+} */
 
 /* :not() */
 
+li:not(:nth-of-type(3)) {
+  background: blue;
+}
 
-
+li:not(.muted) {
+  background: red;
+}
 
 /* Petit rajout dont je ne parle pas dans la vidéo. */
 
@@ -38,6 +97,8 @@
 
 /* Ex : Tous les h1 ET tous les h2 ET tous les paragraphes. */
 
-h1, h2, p {
+h1,
+h2,
+p {
   color: crimson;
-} 
+}
