@@ -1,6 +1,6 @@
 body {
   background-color: #333;
-  height: 2500px; 
+  height: 2500px;
 }
 
 /* Exemple 1. */
@@ -8,22 +8,36 @@ body {
 .box {
   width: 150px;
   height: 150px;
+  /* Valeur de base */
+  position: static;
 }
 
 .b1 {
   background-color: crimson;
+  position: relative;
+  /* left: 250px; */
+  /* top: 50px; */
+  /* right: 100px;
+  bottom: 150px; */
 }
 
 .b2 {
   background-color: yellowgreen;
+  position: absolute;
+  top: 50px;
+  left: 0;
 }
 
 .b3 {
   background-color: skyblue;
+  position: fixed;
+  right: 0;
 }
 
 .b4 {
   background-color: cornsilk;
+  position: sticky;
+  top: 200px;
 }
 
 .b5 {
@@ -36,9 +50,13 @@ body {
   width: 200px;
   height: 200px;
   background-color: thistle;
+  position: relative;
 }
 .child {
   width: 50px;
   height: 50px;
   background: crimson;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
