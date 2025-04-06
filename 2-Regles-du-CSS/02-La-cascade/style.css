@@ -3,3 +3,11 @@ body {
   color: #f1f1f1;
   text-align: center;
 }
+
+h1 {
+  color: green;
+}
+
+h1 {
+  color: red;
+}
