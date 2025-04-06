@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,3 +23,45 @@ body {
 }
 
 /* Contenu */
+
+.percentage {
+  width: 80%;
+}
+
+.pixels {
+  width: 400px;
+}
+
+.vw {
+  /* width: 50vw; */
+  /* width: 90vmin; */
+  /* width: 100vmax; */
+}
+
+.vh {
+  /* width: 10vh; */
+  /* height: 100vh; */
+}
+
+/* Texte */
+
+p {
+  color: #f1f1f1;
+  margin: 20px 0;
+}
+
+.pixel-txt {
+  font-size: 50px;
+}
+
+.parent {
+  font-size: 20px;
+}
+
+.child {
+  font-size: 2em;
+}
+
+.rem {
+  font-size: 2rem;
+}
