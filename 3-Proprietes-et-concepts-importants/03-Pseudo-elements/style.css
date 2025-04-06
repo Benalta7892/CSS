@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,4 +10,30 @@ h1 {
   font-size: 80px;
 }
 
+h1::before {
+  content: "";
+  background: red;
+  display: block;
+  /* width: 50px; */
+  height: 50px;
+}
 
+h1::after {
+  content: "";
+  background: red;
+  display: block;
+  /* width: 50px; */
+  height: 50px;
+}
+
+p::first-line {
+  background: dodgerblue;
+}
+
+p::first-letter {
+  font-size: 45px;
+}
+
+p::selection {
+  background: violet;
+}
