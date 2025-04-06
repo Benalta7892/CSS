@@ -1,0 +1,22 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: red;
+}
+
+button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.card {
+  color: green;
+  padding: 20px;
+}
+
+.card p {
+  padding: inherit;
+}
+
+a {
+  color: coral;
+}

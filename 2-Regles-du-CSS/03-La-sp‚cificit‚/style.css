@@ -1,0 +1,23 @@
+body {
+  background: #222;
+}
+
+/* 5. le !important */
+
+
+
+/* 4. On peut enchaîner des sélecteurs, augmentant ainsi leur force */
+/* force : 1 1 0 */
+
+
+
+/* 3. Sélecteur d'ID : force 3*/
+
+
+
+/* 2. Sélecteur de classe : force 2 */
+
+
+
+/* 1. Sélecteur d'élément : force 1 */
+
