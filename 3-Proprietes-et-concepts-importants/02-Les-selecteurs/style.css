@@ -1,0 +1,43 @@
+/* Sélecteur universel et simple reset */
+
+
+/* * a une spécifité de 0  */
+
+
+
+/* Par type : p, h1, form */
+
+
+
+/* Par classe / id */
+
+
+
+
+/* Combinaison */
+
+
+
+/* Sélecteurs avancés +~> */
+
+
+
+
+/* Les pseudo-classes de position */
+
+
+
+/* :not() */
+
+
+
+
+/* Petit rajout dont je ne parle pas dans la vidéo. */
+
+/* Assembler plusieurs sélections avec la virgule (,) */
+
+/* Ex : Tous les h1 ET tous les h2 ET tous les paragraphes. */
+
+h1, h2, p {
+  color: crimson;
+} 
