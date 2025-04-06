@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,8 +11,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 50px;
 }
-
-
 
 /* 1. */
 .card {
@@ -26,21 +26,25 @@ body {
   background-color: crimson;
   top: 60px;
   left: 60px;
+  z-index: 1;
 }
 .c2 {
   background-color: lightblue;
   top: 70px;
   left: 70px;
+  z-index: 2;
 }
 .c3 {
   background-color: violet;
   top: 80px;
   left: 80px;
+  z-index: 999;
 }
 .c4 {
   background-color: lightgreen;
   top: 90px;
   left: 90px;
+  z-index: -1;
 }
 .c5 {
   background-color: orangered;
@@ -48,3 +52,20 @@ body {
   left: 100px;
 }
 
+.container {
+  width: 250px;
+  height: 250px;
+  background: dodgerblue;
+  /* position: relative;
+  z-index: 1; */
+  /* transform: rotate(45deg); */
+  opacity: 0.8;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  background: violet;
+  position: relative;
+  z-index: -1;
+}
