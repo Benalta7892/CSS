@@ -4,20 +4,33 @@ body {
 
 /* 5. le !important */
 
-
+h1 {
+  color: aquamarine !important;
+}
 
 /* 4. On peut enchaîner des sélecteurs, augmentant ainsi leur force */
 /* force : 1 1 0 */
 
-
+body .title#title-1 {
+  color: gold;
+}
 
 /* 3. Sélecteur d'ID : force 3*/
 
-
+#title-1 {
+  color: dodgerblue;
+}
 
 /* 2. Sélecteur de classe : force 2 */
 
-
+.title {
+  color: green;
+}
 
 /* 1. Sélecteur d'élément : force 1 */
 
+h1 {
+  font-family: 45px;
+  text-align: center;
+  color: crimson;
+}
