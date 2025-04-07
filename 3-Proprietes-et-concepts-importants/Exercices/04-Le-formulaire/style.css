@@ -11,7 +11,7 @@ body {
   padding-top: 75px;
 }
 
-.form {
+/* .form {
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -62,4 +62,60 @@ h2 {
 
 .btn:hover {
   background-color: rgb(0, 177, 177);
+} */
+
+/* Correction */
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 30px 40px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-info {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #181818;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #181818;
+}
+
+input,
+label,
+textarea {
+  display: block;
+}
+
+input,
+textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #2222224f;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #2222224f;
+}
+
+button {
+  margin-top: 10px;
+  min-width: 225px;
+  padding: 10px 6px;
+  border: 1px solid #2222224f;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3824f1;
 }
