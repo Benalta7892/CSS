@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,4 +9,57 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 75px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  align-self: center;
+  margin-bottom: 14px;
+}
+
+.label {
+  color: #474646;
+  margin-bottom: 4px;
+}
+
+.input {
+  margin-bottom: 14px;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 4px;
+  height: 24px;
+  padding: 2px;
+}
+.input:focus {
+  border-color: darkcyan;
+  outline: none;
+}
+
+.input-textarea {
+  margin-bottom: 28px;
+  resize: vertical;
+  min-height: 36px;
+}
+
+.btn {
+  background-color: darkcyan;
+  padding: 8px;
+  align-self: flex-start;
+  width: 150px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(0, 177, 177);
 }
