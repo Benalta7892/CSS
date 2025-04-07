@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -22,6 +24,8 @@ div {
   background: crimson;
   position: relative;
 }
+
+/* La couleur qui sera au dessus des autres */
 .yellow-box {
   background: gold;
   position: fixed;
@@ -39,10 +43,3 @@ div {
   top: 0;
   z-index: -1;
 }
-
-
-
-
-
-
-
