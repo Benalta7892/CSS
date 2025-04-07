@@ -1,0 +1,39 @@
+h1 {
+  /* Valeurs relatives : vw */
+  font-size: 50px;
+  font-size: 5vw;
+  font-size: calc(2vw + 30px);
+
+  /* clamp */
+  font-size: clamp(30px, 5vw, 50px);
+
+  /* min */
+  font-size: min(5vw, 50px);
+
+  /* max */
+  font-size: max(5vw, 50px);
+}
+
+/* Technique de l'escalier */
+
+h1 {
+  font-size: 65px;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+  }
+}
