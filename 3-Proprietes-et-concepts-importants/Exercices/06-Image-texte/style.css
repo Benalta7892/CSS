@@ -12,7 +12,7 @@ body {
   padding-top: 100px;
 }
 
-.card {
+/* .card {
   align-content: center;
   width: 450px;
   box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.3);
@@ -40,4 +40,38 @@ h2 {
 
 p {
   color: rgb(61, 61, 61);
+} */
+
+/* Correction */
+
+.container {
+  max-width: 600px;
+  background: #f1f1f1;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+}
+
+.container p {
+  line-height: 1.4;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+  shape-outside: margin-box;
+  margin: 0 20px 5px 0;
 }
