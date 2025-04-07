@@ -8,7 +8,11 @@
 /* 2. Sélectionnez seulement les h2 qui sont les premiers enfants d'un parent
   avec la classe ".content" et donnez-leur la couleur "red" */
 
-h2:first-of-type {
+/* h2:first-of-type {
+  color: red;
+} */
+
+.content > h2:first-child {
   color: red;
 }
 
@@ -25,7 +29,11 @@ h2:first-of-type {
   qui est directement précédé par le bouton contenant la classe "delete-btn" et
   donnez-lui un fond "hotpink" */
 
-.modify-btn {
+/* .modify-btn {
+  background-color: hotpink;
+} */
+
+button.delete-btn + button.modify-btn {
   background-color: hotpink;
 }
 
@@ -44,7 +52,7 @@ li:nth-child(4) {
 
 /* 7. Sélectionnez tous les li sauf le 5ème et donnez-leur un fond "midnightblue" */
 
-li:not(:nth-child(3)) {
+li:not(:nth-child(5)) {
   background-color: midnightblue;
 }
 
@@ -52,10 +60,18 @@ li:not(:nth-child(3)) {
     et augmentez la taille de sa première lettre à 50px */
 /* Vous avez besoin de faire deux sélections */
 
-p:last-of-type::first-line {
+/* p:last-of-type::first-line {
   background-color: crimson;
 }
 
 p:last-child::first-letter {
+  font-size: 50px;
+} */
+
+.final-txt::first-line {
+  background-color: crimson;
+}
+
+.final-txt::first-letter {
   font-size: 50px;
 }
