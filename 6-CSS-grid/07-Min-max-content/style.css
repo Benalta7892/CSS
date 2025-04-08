@@ -1,0 +1,30 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 150px;
+}
+
+.grid {
+  background: #f4ecce;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: grid;
+  grid-gap: 5px;
+}
+
+.item {
+  border: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bolder;
+  background: royalblue;
+  color: #f1f1f1;
+}
+
