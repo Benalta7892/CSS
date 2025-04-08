@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,9 +12,11 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 200px;
-  grid-gap: 5px;
+  /* grid-template-rows: 200px 200px; */
+  /* grid-template-columns: 200px 200px 1fr; */
+  /* Raccourci grid-template: grid-template-rows / grid-template-columns */
+  grid-template: repeat(2, 200px) / repeat(2, 200px) 1fr;
+  grid-gap: 6px;
 }
 .item {
   border: 1px solid #222;
