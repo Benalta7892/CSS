@@ -11,7 +11,7 @@ body {
   padding: 140px 0 100px;
 }
 
-.gallery {
+/* .gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -35,4 +35,25 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+
+/* Correction */
+
+.gallery {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery li {
+  width: 250px;
+  list-style-type: none;
+}
+
+.gallery img {
+  width: 100%;
 }
