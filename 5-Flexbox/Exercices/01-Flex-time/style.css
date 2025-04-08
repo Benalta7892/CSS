@@ -34,9 +34,15 @@ body {
 }
 
 /* Exercice 1 */
-.flex-1 {
+/* .flex-1 {
   justify-content: space-around;
   align-items: center;
+} */
+
+/* Correction */
+/* Variante */
+.flex-1 .flex-item {
+  margin: auto;
 }
 
 /* Exercice 2 */
@@ -49,6 +55,17 @@ body {
 .item-3 {
   align-self: end;
 } */
+
+/* Correction */
+.flex-2 .item-2 {
+  margin: auto;
+}
+.flex-2 .item-3 {
+  /* align-self: flex-end; */
+
+  /* Variante */
+  margin-top: auto;
+}
 
 /* Exercice 3 */
 
@@ -76,6 +93,31 @@ body {
   height: 130px;
 } */
 
+/* Correction */
+.flex-3 {
+  align-items: flex-end;
+}
+
+.flex-3 .flex-item {
+  width: 100%;
+}
+
+.flex-3 .item-1 {
+  height: 20%;
+}
+.flex-3 .item-2 {
+  height: 30%;
+}
+.flex-3 .item-3 {
+  height: 75%;
+}
+.flex-3 .item-4 {
+  height: 25%;
+}
+.flex-3 .item-5 {
+  height: 35%;
+}
+
 /* Exercice 4 */
 /* Vous pouvez mettre des valeurs arbitraires afin que ça ressemble à l'exemple donné. */
 /* .item-1 {
@@ -87,6 +129,11 @@ body {
 .item-3 {
   flex-grow: 1;
 } */
+
+/* Correction */
+.flex-4 .item-2 {
+  flex-grow: 1;
+}
 
 /* Exercice 5 */
 
@@ -107,6 +154,18 @@ body {
   width: 100%;
   flex-basis: 100px;
 } */
+
+/* Correction */
+.flex-5 {
+  flex-direction: column;
+}
+
+.flex-5 .flex-item {
+  width: auto;
+}
+.flex-5 .item-2 {
+  flex-grow: 1;
+}
 
 /* Exercice 6 */
 .flex-6 {
