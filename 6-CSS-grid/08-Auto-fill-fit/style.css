@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,7 +14,14 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
+  justify-content: center;
   grid-gap: 5px;
+
+  /* auto-fit */
+  grid-template-columns: repeat(auto-fit, 100px);
+
+  /* auto-fill */
+  grid-template-columns: repeat(auto-fill, 100px);
 }
 .item {
   border: 1px solid #222;
