@@ -34,32 +34,82 @@ body {
 }
 
 /* Exercice 1 */
-
-
-
-
+.flex-1 {
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* Exercice 2 */
-
-
-
+/* .flex-2 {
+  justify-content: space-between;
+}
+.item-2 {
+  align-self: center;
+}
+.item-3 {
+  align-self: end;
+} */
 
 /* Exercice 3 */
 
-
-
+/* .flex-3 {
+  align-items: flex-end;
+}
+.item-1 {
+  flex-grow: 1;
+  height: 80px;
+}
+.item-2 {
+  flex-grow: 1;
+  height: 110px;
+}
+.item-3 {
+  flex-grow: 1;
+  height: 300px;
+}
+.item-4 {
+  flex-grow: 1;
+  height: 90px;
+}
+.item-5 {
+  flex-grow: 1;
+  height: 130px;
+} */
 
 /* Exercice 4 */
 /* Vous pouvez mettre des valeurs arbitraires afin que ça ressemble à l'exemple donné. */
-
-
-
+/* .item-1 {
+  flex-grow: 1;
+}
+.item-2 {
+  flex-grow: 50;
+}
+.item-3 {
+  flex-grow: 1;
+} */
 
 /* Exercice 5 */
 
+/* .flex-5 {
+  flex-direction: column;
+}
 
-
+.item-1 {
+  width: 100%;
+  flex-basis: 100px;
+}
+.item-2 {
+  width: 100%;
+  flex-basis: 400px;
+  flex-shrink: 3;
+}
+.item-3 {
+  width: 100%;
+  flex-basis: 100px;
+} */
 
 /* Exercice 6 */
-
-
+.flex-6 {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
