@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@ body {
 .flex-container {
   max-width: 600px;
   margin: 0 auto;
-  height: 400px;
+  height: 600px;
   background: wheat;
   padding: 10px;
   border-radius: 5px;
@@ -21,23 +23,23 @@ body {
   gap: 10px;
 
   /* justify-content : center, space-between, flex-end */
-
+  /* justify-content: center; */
 
   /* align-items : center, flex-end, etc... */
-
+  /* align-items: center; */
 
   /* flex-direction: column; */
-  
-  
+  /* flex-direction: column; */
+
   /* flex-wrap: wrap, nowrap */
-  
+  flex-wrap: wrap;
 
   /* flex-flow: column wrap; */
-
-
+  /* flex-flow: row wrap; */
 
   /* Gére l'écart entre les rangées/colonnes qui sont passées à la ligne */
   /* align-content: flex-start, center, space-between  */
+  align-content: flex-start;
 }
 
 .flex-item {
@@ -49,4 +51,5 @@ body {
   font-size: 35px;
   color: #f1f1f1;
   font-weight: bold;
+  flex-shrink: 1;
 }
