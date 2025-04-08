@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ body {
 }
 
 .flex-container {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   height: 400px;
   background: wheat;
@@ -19,6 +21,7 @@ body {
   border-radius: 5px;
   display: flex;
   gap: 10px;
+  flex-direction: row;
 }
 .flex-item {
   width: 100px;
@@ -29,4 +32,35 @@ body {
   font-size: 35px;
   color: #f1f1f1;
   font-weight: bold;
+
+  /* Comportement de base, s'etire sur le cross-axis */
+  align-self: stretch;
+
+  /* Flex grow */
+  /* Distribue l'espace restant */
+  /* De base, sur 0 */
+  /* flex-grow: 1; */
+
+  /* Gere le retrecissement */
+  /* De base, sur 1 */
+  /* flex-shrink: 1; */
+
+  /* flex-basis, permet de gerer la taille sur main-axis */
+
+  /* raccouri, flex: grow - shrink - flex-basis(auto, on ne donne pas de valeur) */
+  /* flex: 1 0 auto; */
+}
+
+.item-1 {
+  /* width: 80px; */
+  /* flex-basis: 200px; */
+  order: 3;
+}
+.item-2 {
+  /* width: 125px; */
+  order: 1;
+}
+.item-3 {
+  /* width: 100px; */
+  order: 2;
 }
