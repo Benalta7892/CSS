@@ -159,7 +159,6 @@ body {
 .flex-5 {
   flex-direction: column;
 }
-
 .flex-5 .flex-item {
   width: auto;
 }
