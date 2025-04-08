@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,4 +9,53 @@
 body {
   background: #222;
   font-family: Open sans, Helvetica, sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+}
+
+.toggler-container,
+.navigation,
+.logo-link,
+.sign-link {
+  width: 100%;
+}
+
+.toggler-container {
+  display: none;
+}
+
+header a {
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation a {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.logo-link {
+  font-family: Luckiest Guy, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.sign-link {
+  display: flex;
+}
+
+.sign-link img {
+  margin-left: auto;
+  width: 30px;
 }
