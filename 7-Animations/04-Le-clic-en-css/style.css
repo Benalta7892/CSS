@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,4 +9,28 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #222;
+}
+
+.checkbox-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-toggler {
+  display: block;
+  width: 300px;
+  height: 300px;
+  transition: background-color 0.3s ease;
+
+  background-color: orangered;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .content-toggler {
+  background-color: dodgerblue;
 }
