@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,4 +16,50 @@ body {
   height: 200px;
   margin: 0 auto;
   background-color: orangered;
+  /* animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: paused; */
+
+  /* Raccourci */
+  animation: spin 2s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+  /* 0% {
+    transform: rotate(0deg);
+  } */
+
+  /* 100% {
+    transform: rotate(360deg);
+  } */
+
+  /* from {
+    transform: rotate(0deg);
+  } */
+
+  /* to {
+    transform: rotate(360deg);
+  } */
+
+  /* 0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(300deg);
+  } */
+
+  /* 50% {
+    transform: rotate(45deg);
+    background-color: dodgerblue;
+  } */
+
+  100% {
+    transform: rotate(360deg);
+    background-color: gold;
+  }
 }
