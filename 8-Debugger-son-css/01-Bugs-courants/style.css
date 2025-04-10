@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,10 +18,10 @@ button {
   font-size: 16px;
   min-width: 125px;
   margin: 0 auto;
-  background: green; 
+  background: green;
   border-radius: 5px;
   color: #f1f1f1;
-  border: none; 
+  border: none;
 }
 
 button {
@@ -39,7 +41,7 @@ button.form-btn {
   background: orange;
 }
 button {
-  background: purple!important;
+  background: purple !important;
 }
 
 /* II. Propriétés */
@@ -52,17 +54,15 @@ button {
   /* Mal écrire une propriété, certains IDE ne le montrent pas */
   /* pdding: 10px; */
 
-
   /* Répeter une même prop dans une règle */
   opacity: 0.5;
   opacity: 1;
-
 
   border-radius: 10px;
   max-width: 350px;
   line-height: 1.4;
   margin: 0 auto;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* III */
@@ -89,15 +89,17 @@ h1 {
   top: 40%;
   width: 100%;
   background: lightblue;
+  padding: 50px 0;
   text-align: center;
   /* opacity: 0.99; */
 }
 
 .content {
   height: 100vh;
-  background: rgb(212,104,104);
+  background: rgb(212, 104, 104);
   /* opacity: 0.99; */
   transform: translate(0px);
+  /* filter: blur(0px); */
 }
 
 /* V */
@@ -120,10 +122,11 @@ h1 {
 /* Button a "min-content" de base, valeur donnée par le navigateur. */
 /* Input a une largeur donnée par le navigateur en tant qu'élément remplacé. */
 
-button, input {
+button,
+input {
   display: block;
+  /* width: 100%; */
 }
-
 
 /* VII */
 
@@ -134,13 +137,11 @@ option {
   height: 200px;
   /* ---- */
 
-
   font-size: 50px;
   color: red;
 }
 
 /* VIII Fusion des marges */
-
 
 .container {
   background: green;
@@ -148,9 +149,9 @@ option {
   height: 300px;
   margin: 0 auto;
   /* Pour résoudre le problème */
-  /* padding-top: 100px; */
+  padding-top: 100px;
 }
 .child {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   background: orange;
 }
