@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,4 +12,20 @@
   margin: 100px auto 0;
   background: orange;
   position: relative;
+  animation: moving 4s infinite ease-in-out;
+}
+
+@keyframes moving {
+  20% {
+    /* margin-top: -250px; */
+    transform: translateY(-250px);
+  }
+  50% {
+    /* margin-top: 250px; */
+    transform: translateY(250px);
+  }
+  100% {
+    /* margin-top: 750px; */
+    transform: translateY(750px);
+  }
 }
