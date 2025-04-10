@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,6 +11,22 @@ body {
   height: 100%;
 }
 
-/* body {
+body {
+  /* background-color: violet; */
+  /* background-image: linear-gradient(to top left, red, blue, orange, green); */
 
-} */
+  /* background-image: linear-gradient(to right, #333 50%, #eee 75%, #333 75%); */
+
+  /* background: linear-gradient(
+    to right,
+    green 0% 33%,
+    white 33% 66%,
+    orange 66% 100%
+  ); */
+
+  /* background: radial-gradient(violet, white); */
+
+  /* background: repeating-linear-gradient(pink, orange 50px); */
+
+  /* background: conic-gradient(from 45deg, orange, rgb(18, 183, 243)); */
+}
