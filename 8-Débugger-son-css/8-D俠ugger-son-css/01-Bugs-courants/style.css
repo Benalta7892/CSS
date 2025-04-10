@@ -1,0 +1,156 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding-top: 140px; */
+}
+
+/* I. Cascade et spécificité */
+
+button {
+  padding: 14px 10px;
+  font-size: 16px;
+  min-width: 125px;
+  margin: 0 auto;
+  background: green; 
+  border-radius: 5px;
+  color: #f1f1f1;
+  border: none; 
+}
+
+button {
+  background: yellow;
+}
+
+.form-btn {
+  background: crimson;
+}
+button.form-btn {
+  background: blue;
+}
+#submit-btn {
+  background: #111;
+}
+#submit-btn.form-btn {
+  background: orange;
+}
+button {
+  background: purple!important;
+}
+
+/* II. Propriétés */
+
+.card {
+  /* Double déclaration */
+  padding-top: 50px;
+  padding: 20px;
+
+  /* Mal écrire une propriété, certains IDE ne le montrent pas */
+  /* pdding: 10px; */
+
+
+  /* Répeter une même prop dans une règle */
+  opacity: 0.5;
+  opacity: 1;
+
+
+  border-radius: 10px;
+  max-width: 350px;
+  line-height: 1.4;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
+/* III */
+/* Erreur de compatibilité */
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  color: transparent;
+  background: orange;
+  /* Ici */
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* IV */
+
+/* Les contextes s'empilent dans l'ordre du DOM. */
+/* Le z-index est seulement possible avec les éléments positionnés. */
+
+.modal {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  width: 100%;
+  background: lightblue;
+  text-align: center;
+  /* opacity: 0.99; */
+}
+
+.content {
+  height: 100vh;
+  background: rgb(212,104,104);
+  /* opacity: 0.99; */
+  transform: translate(0px);
+}
+
+/* V */
+
+/* Attention à l'espace, sinon ça fonctionne pas */
+@media (min-width: 1000px) {
+  ul {
+    background: lightgreen;
+  }
+}
+/* La cascade fonctionne avec les MQs */
+@media (min-width: 1000px) {
+  ul {
+    background: royalblue;
+  }
+}
+
+/* VI Boutons et éléments remplacés */
+
+/* Button a "min-content" de base, valeur donnée par le navigateur. */
+/* Input a une largeur donnée par le navigateur en tant qu'élément remplacé. */
+
+button, input {
+  display: block;
+}
+
+
+/* VII */
+
+option {
+  /* Props Ignorées */
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  /* ---- */
+
+
+  font-size: 50px;
+  color: red;
+}
+
+/* VIII Fusion des marges */
+
+
+.container {
+  background: green;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  /* Pour résoudre le problème */
+  /* padding-top: 100px; */
+}
+.child {
+  margin-top: 100px;
+  background: orange;
+}
