@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,23 +11,34 @@ body {
   background: #111;
 }
 
-
 div.box {
   width: 350px;
   height: 350px;
   background: orangered;
-  position:absolute;
+  position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   /* Clip-path */
+  /* clip-path: circle(150px at 0 0); */
+  /* clip-path: circle(10%); */
 
+  /* clip-path: polygon(50% 0%, 100% 100%, 0% 100%); */
+
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
 }
 
 /* Clippy */
 /* https://bennettfeely.com/clippy/ */
-
 
 .clipped-section {
   background: orangered;
@@ -46,7 +59,11 @@ div.box {
   font-size: 18px;
   min-height: 400px;
 }
-/* .clipped-1 {
+
+.clipped-1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
+
 .clipped-2 {
-} */
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+}
