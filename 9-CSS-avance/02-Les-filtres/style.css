@@ -1,0 +1,15 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 75px;
+}
+
+img {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
