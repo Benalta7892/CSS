@@ -557,3 +557,100 @@ nav a:hover {
     display: none;
   }
 }
+
+/* Contact */
+
+.contact {
+  padding: 120px 10px;
+  background-image: url("ressources/tradition-japan.jpg");
+  background-position: center;
+  background-size: cover;
+  border-top: var(--dark-thick-border);
+}
+
+.rounded-contact {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: var(--almond);
+  padding: 50px 40px 92px;
+  border-radius: 25px;
+  box-shadow: var(--shadow-sm);
+  border: var(--dark-thick-border);
+}
+
+.rounded-contact h2 {
+  margin-bottom: 44px;
+}
+
+.contact-list {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.contact-list img {
+  width: 30px;
+}
+
+.contact-list li {
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: var(--light-orange-pinky);
+  border: var(--dark-thick-border);
+}
+
+.contact-list li:not(:nth-child(3)) {
+  margin-bottom: 15px;
+}
+
+.contact-list a,
+.contact-list span {
+  font-size: var(--fs-20);
+  color: var(--dark-base);
+  font-weight: 700;
+}
+
+@media (max-width: 450px) {
+  .contact {
+    padding: 40px 10px;
+  }
+
+  .contact .heading-2 {
+    font-size: var(--fs-24);
+  }
+
+  .rounded-contact {
+    padding: 30px 20px;
+  }
+
+  .contact-list li {
+    padding: 10px;
+  }
+
+  .contact-list a,
+  .contact-list span {
+    font-size: var(--fs-14);
+  }
+
+  .contact-list img {
+    width: 20px;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: var(--light-orange);
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration-color: var(--dark-base);
+  color: var(--dark-base);
+  text-underline-offset: 4px;
+  font-weight: 500;
+}
