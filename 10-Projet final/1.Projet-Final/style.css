@@ -394,3 +394,166 @@ nav a:hover {
     font-size: var(--fs-18);
   }
 }
+
+/* Pricing section */
+
+.pricing {
+  padding: 44px 10px 136px;
+  background-image: var(--radial-white-beige);
+}
+
+.pricing .heading-2 {
+  margin-bottom: 62px;
+}
+
+.pricing-cards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-card {
+  width: 275px;
+  min-height: 400px;
+  padding: 18px;
+  background-color: var(--light-orange);
+  border-radius: 5px;
+  border: var(--dark-thick-border);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card h3 {
+  font-family: var(--accent-font);
+  font-size: var(--fs-26);
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-line {
+  width: 100%;
+  margin: 0 10px;
+  height: 1px;
+  background-color: var(--dark-base);
+}
+
+.plan-price {
+  font-size: var(--fs-24);
+  font-family: var(--accent-font);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.card-subtitle {
+  font-size: var(--fs-14);
+  margin-bottom: 24px;
+}
+
+.pricing-card ul {
+  margin-bottom: 36px;
+}
+
+.pricing-card li {
+  list-style-type: none;
+  display: flex;
+  font-weight: 500;
+}
+
+.pricing-card li:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+
+.pricing-card li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.pricing-card button {
+  margin-top: auto;
+  padding: 10px;
+  font-size: var(--fs-16);
+  font-weight: bold;
+  cursor: pointer;
+  border: var(--dark-thick-border);
+  border-radius: 2px;
+  background-color: var(--light-white);
+}
+
+.pricing-card button:hover {
+  color: var(--light-white);
+  background-color: var(--dark-base);
+}
+
+.c1 {
+  transform: translateY(10px) rotate(-10deg);
+}
+
+.c2 {
+  transform: translateY(-10px);
+  z-index: 2;
+}
+
+.c3 {
+  transform: translateY(10px) rotate(10deg);
+}
+
+.shadow {
+  display: flex;
+  margin: 20px auto 0;
+}
+
+@media (max-width: 900px) {
+  .pricing {
+    padding-bottom: 60px;
+  }
+
+  .pricing .heading-2 {
+    margin-bottom: 40px;
+  }
+
+  .pricing-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 500px;
+    min-height: auto;
+    margin-bottom: 25px;
+  }
+
+  .pricing-card h3 {
+    font-size: var(--fs-22);
+  }
+
+  .plan-price {
+    font-size: var(--fs-20);
+  }
+
+  .card-subtitle {
+    margin-bottom: 24px;
+  }
+
+  .pricing-card button {
+    padding: 8px;
+    font-size: var(--fs-14);
+  }
+
+  .c1,
+  .c2,
+  .c3 {
+    transform: none;
+  }
+
+  .c2 {
+    order: 3;
+  }
+
+  .shadow {
+    display: none;
+  }
+}
