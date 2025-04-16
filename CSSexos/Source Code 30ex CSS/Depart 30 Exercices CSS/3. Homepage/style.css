@@ -8,5 +8,74 @@
 body {
   background: #f1f1f1;
   font-family: roboto, sans-serif;
+}
 
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  padding: 16px 16px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-underline-offset: 4px;
+  text-decoration-color: #858585;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero-section {
+  background-image: url("ressources/citynight.jpg");
+  background-position: center;
+  object-fit: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section h1 {
+  font-size: 75px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-section p {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-btn {
+  display: flex;
+  width: 220px;
+  padding: 10px 16px;
+  font-size: 20px;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+.hero-btn img {
+  width: 20px;
+}
+
+.down-btn {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.down-btn img {
+  width: 28px;
 }
