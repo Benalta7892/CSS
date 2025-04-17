@@ -1,5 +1,6 @@
 /* Exercice 1 */
-/* Ouvrez "exercice1.html" sur un navigateur puis changez la position de la nav afin qu'elle suive l'écran au scroll */
+/* Ouvrez "exercice1.html" sur un navigateur puis changez la position de la nav
+ afin qu'elle suive l'écran au scroll */
 
 nav {
   width: 100%;
@@ -8,11 +9,11 @@ nav {
   justify-content: center;
   padding: 15px 0;
   /* position ?  */
-
 }
 
 /* Exercice 2 */
-/* Ouvrez "exercice2.html" puis trouvez comment parfaitement centrer la div ".square" dans ".box". (sur X et Y). */
+/* Ouvrez "exercice2.html" puis trouvez comment parfaitement centrer
+ la div ".square" dans ".box". (sur X et Y). */
 
 .box {
 }
@@ -20,7 +21,6 @@ nav {
 .square {
   background: violet;
 }
-
 
 /* Exercice 3 */
 /* Vous devez placer ce qu'on appelle des "boutons flottants".
@@ -30,19 +30,14 @@ Utilisez un décalage de "15px" à chaque fois, pour qu'ils ne soient pas collé
 */
 
 .floating-btn {
-
 }
 .b1 {
-
 }
 .b2 {
-
 }
 .b3 {
-
 }
 .b4 {
-
 }
 
 /* Exercice 4 */

@@ -167,3 +167,72 @@ nav a:hover::after {
 .stream-link img {
   width: 30px;
 }
+
+.floating-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #fff;
+  animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.01);
+  }
+}
+
+.floating-btn img {
+  width: 30px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 650px) {
+  .home {
+    height: 60vh;
+    padding: 0 25px;
+  }
+
+  .home h1 {
+    padding-top: 100px;
+  }
+
+  .subtitle {
+    margin-top: 5px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .stream-link {
+    max-width: 145px;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .floating-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .floating-btn img {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .home {
+    padding: 0 10px;
+  }
+}
