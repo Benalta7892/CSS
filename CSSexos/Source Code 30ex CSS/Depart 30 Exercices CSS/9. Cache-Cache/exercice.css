@@ -3,22 +3,32 @@
 /* Vous pouvez tester le click sur les paragraphes grace au script en bas de l'index.html */
 
 .p1 {
-  opacity: 10%;
+  opacity: 0;
 }
 
 /* 2. Occultez le second paragraphe sans le rendre accessible. */
 
-.p2 {
+/* .p2 {
   opacity: 20%;
   pointer-events: none;
   user-select: none;
+} */
+
+/* Correction */
+.p2 {
+  visibility: hidden;
 }
 
 /* 3. Occultez le troisième paragraphe en faisant en sorte qu'il ne prenne plus d'espace
   et qu'on ne puisse pas cliquer dessus et qu'il ne soit plus accessible. */
 
-.p3 {
+/* .p3 {
   pointer-events: none;
   user-select: none;
   visibility: hidden;
+} */
+
+/* Correction */
+.p3 {
+  display: none;
 }
