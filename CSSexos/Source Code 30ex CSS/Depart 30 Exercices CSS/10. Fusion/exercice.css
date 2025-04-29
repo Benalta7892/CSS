@@ -1,42 +1,47 @@
 /* Trouvez au moins 3 façons de régler le problème de la fusion des marges. */
 
-
 .wrap {
-    max-width: 600px;
-    margin: 0 auto;
-    background: orange;
+  max-width: 600px;
+  margin: 0 auto;
+  background: orange;
 }
 
 .box {
-    width: 100%;
-    height: 200px;
-    background: slateblue;
-    margin-top: 200px;
+  width: 100%;
+  height: 200px;
+  background: slateblue;
+  margin-top: 200px;
 }
-  
 
 /* #1 */
-.w1 {
-
-}
+/* .w1 {
+  display: flex;
+} */
 .w1 .box {
 }
 
+/* Correction */
+.w1 {
+  /* padding-top: 1px; */
+  border-top: 1px solid transparent;
+}
 
 /* #2 */
 .w2 {
-  
+  display: grid;
 }
 .w2 .box {
 }
 
+/* Correction */
+.w2 {
+  padding-top: 200px;
+}
 
 /* #3 */
 .w3 {
-
+  /* display: flex; */
+  display: grid;
 }
 .w3 .box {
 }
-
-
-
