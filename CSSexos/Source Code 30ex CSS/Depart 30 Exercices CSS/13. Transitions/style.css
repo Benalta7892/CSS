@@ -27,10 +27,12 @@ transform: rotate(720deg)
   height: 50px;
   background-color: salmon;
   cursor: pointer;
-  transition: height 0.5s 0s, width 0.5s 0.5s, transform 0.5s 1s;
+  transition: transform 0.5s 0s, width 0.5s 0.5s, height 0.5s 1s;
 }
 
 .box:hover {
+  transition: height 0.5s 0s, width 0.5s 0.5s, transform 0.5s 1s;
+
   height: 100px;
   width: 200px;
   transform: rotate(720deg);
