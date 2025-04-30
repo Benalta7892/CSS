@@ -13,10 +13,9 @@ body {
   color: #222;
 }
 
-
 /* Utilisez les transitions CSS pour créer cette séquence d'animations */
-/* 
-Propriétés à animer pour arriver à ce résultat : 
+/*
+Propriétés à animer pour arriver à ce résultat :
 width: 50 - 200px
 height: 50 - 100px
 transform: rotate(720deg)
@@ -28,7 +27,11 @@ transform: rotate(720deg)
   height: 50px;
   background-color: salmon;
   cursor: pointer;
+  transition: height 0.5s 0s, width 0.5s 0.5s, transform 0.5s 1s;
 }
-.box:hover {
 
+.box:hover {
+  height: 100px;
+  width: 200px;
+  transform: rotate(720deg);
 }
