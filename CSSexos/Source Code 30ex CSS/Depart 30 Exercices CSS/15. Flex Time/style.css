@@ -43,15 +43,24 @@ body {
 
 /* Exemple #1 */
 
-.containerA .a2 {
+/* .containerA .a2 {
   flex-grow: 2;
-}
+} */
 
 /* Correction */
 
+.a1,
+.a3 {
+  flex-grow: 0;
+}
+
+.a2 {
+  flex-grow: 1;
+}
+
 /* Exemple #2 */
 
-.containerB {
+/* .containerB {
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -74,9 +83,26 @@ body {
 
 .containerB .b5 {
   flex-basis: 48%;
-}
+} */
 
 /* Correction */
+
+.containerB {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.b1,
+.b2,
+.b4,
+.b5 {
+  flex-basis: 45%;
+}
+
+.b3 {
+  flex-basis: calc(90% + 10px);
+}
 
 /* Exemple #3 */
 
@@ -87,14 +113,12 @@ body {
 }
 
 .containerC .item-flex {
-  width: 60%;
-  height: 50px;
+  width: 50%;
+  height: 60px;
 }
 
-/* Correction */
-
 /* Exemple #4 */
-.containerD {
+/* .containerD {
   height: 500px;
   width: 500px;
   justify-content: space-between;
@@ -110,6 +134,23 @@ body {
 
 .containerD .d3 {
   align-self: flex-end;
-}
+} */
 
 /* Correction */
+
+.containerD {
+  height: 500px;
+  width: 500px;
+}
+.containerD .item-flex {
+  width: 150px;
+  height: 150px;
+}
+
+.containerD .d2 {
+  margin: auto;
+}
+
+.containerD .d3 {
+  align-self: flex-end;
+}
