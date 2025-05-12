@@ -26,7 +26,7 @@ body {
 
 /* Exemples flex */
 
-.container-flex  {
+.container-flex {
   width: 800px;
   height: 500px;
   margin: 150px auto;
@@ -34,45 +34,82 @@ body {
   display: flex;
 }
 
-.item-flex {  
+.item-flex {
   background: crimson;
   width: 150px;
   height: 150px;
   margin: 5px;
 }
 
-
 /* Exemple #1 */
 
-
-
-
-/* Exemple #2 */
-.containerB {
-
+.containerA .a2 {
+  flex-grow: 2;
 }
 
+/* Correction */
 
+/* Exemple #2 */
 
+.containerB {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.containerB .b1 {
+  flex-basis: 48%;
+}
+
+.containerB .b2 {
+  flex-basis: 48%;
+}
+
+.containerB .b3 {
+  flex-basis: 100%;
+}
+
+.containerB .b4 {
+  flex-basis: 48%;
+}
+
+.containerB .b5 {
+  flex-basis: 48%;
+}
+
+/* Correction */
 
 /* Exemple #3 */
 
 .containerC {
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.containerC .item-flex {
+  width: 60%;
+  height: 50px;
+}
 
-
-
+/* Correction */
 
 /* Exemple #4 */
 .containerD {
   height: 500px;
   width: 500px;
+  justify-content: space-between;
 }
 .containerD .item-flex {
   width: 150px;
   height: 150px;
 }
 
+.containerD .d2 {
+  align-self: center;
+}
+
+.containerD .d3 {
+  align-self: flex-end;
+}
+
+/* Correction */
