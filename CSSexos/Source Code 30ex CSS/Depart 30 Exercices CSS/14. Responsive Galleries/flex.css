@@ -22,11 +22,21 @@ h1 {
 
 /* Flex galery */
 
-.galerie {
+/* .galerie {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 24px auto;
+} */
+
+/* Correction */
+.galerie {
+  max-width: 1300px;
+  margin: 30px auto 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .item {
