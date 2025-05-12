@@ -23,7 +23,10 @@ h1 {
 /* Flex galery */
 
 .galerie {
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 24px auto;
 }
 
 .item {
@@ -35,5 +38,3 @@ h1 {
   width: 100%;
   height: auto;
 }
-
-
