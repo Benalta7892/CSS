@@ -18,7 +18,7 @@ body {
   padding: 30px 50px;
   font-size: 50px;
   border-radius: 3px;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   background: transparent;
   outline: none;
@@ -62,4 +62,8 @@ body {
 
 .focus-anim:focus::after {
   transform: scaleY(0.9) scaleX(0.95);
+}
+
+.focus-anim:active::before {
+  transform: scaleY(1.2) scaleX(1.1);
 }
